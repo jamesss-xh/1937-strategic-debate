@@ -21,9 +21,43 @@ footer{padding:28px 0 36px;color:#718094;font-size:10px;display:flex;justify-con
 <main>
 <section class="hero"><div class="eyebrow">HISTORICAL STRATEGY SIMULATION · 1937</div><h1>1937 <span>·</span> 战略抉择</h1><div class="subtitle">抗战初期，面对强敌，中国应当以空间换时间持久抗战，还是集中主力争取速胜？</div><div class="notice">展示说明：本页面播放课前整理的 AI 模拟辩论稿。辩手发言为教学模拟内容，不是历史人物原话，也不是现场实时模型输出。点击“下一段”逐段播放；史料与事实核查默认收起，需要时再打开。</div></section>
 <section class="panel overview"><div><div class="kicker">CURRENT SESSION</div><div class="roundtitle" id="roundTitle">第一环节：开篇立论</div><div class="muted" id="question"></div></div><div><div class="muted" id="progressText">准备开始 · 共 6 轮</div><div class="progress"><div class="bar" id="bar"></div></div><div class="rounds" id="roundButtons"></div></div></section>
-<section class="panel stage"><div id="content"><div class="empty">准备就绪<br>点击下方“开始播放”，进入主持人开场。</div></div><div class="actions"><div class="side-actions"><button class="btn" id="factBtn" disabled>本段事实核查</button><button class="btn" id="refBtn" disabled>本段参考资料</button><button class="btn" id="allBtn">完整辩论记录</button></div><div style="display:flex;gap:8px"><button class="btn" id="resetBtn">重置</button><button class="btn primary" id="nextBtn">▶ 开始播放</button></div></div></section>
+<section class="panel stage"><div id="content"><div class="empty">准备就绪<br>点击下方“开始播放”，进入主持人开场。</div></div><div class="actions"><div class="side-actions"><button class="btn" id="factBtn" disabled>本段事实核查</button><button class="btn" id="refBtn" disabled>本段参考资料</button><button class="btn" id="allBtn">完整辩论记录</button><button class="btn" id="judgeBtn">豆包裁判报告</button></div><div style="display:flex;gap:8px"><button class="btn" id="resetBtn">重置</button><button class="btn primary" id="nextBtn">▶ 开始播放</button></div></div></section>
 <section class="panel details" id="detail"><h3 id="detailTitle">资料</h3><div class="detailtext" id="detailText"></div></section>
 <section class="panel details" id="transcript"><h3>完整辩论记录</h3><div class="detailtext" id="transcriptText"></div></section>
+<section class="panel details" id="judgePanel">
+<h3>豆包独立裁判报告</h3>
+<div class="detailtext">
+<strong>裁判结论</strong>
+正方 DeepSeek 81.5 分，反方 ChatGPT 79.5 分。正方以 2 分之差略占上风，但不构成明显优势，也不宜表述为“获胜”。这只是豆包对本场模拟辩论表现的评估，不代表历史学界对战略问题的最终定论。
+
+<strong>五维评分</strong>
+项目　　　　　　　　　正方 DeepSeek　反方 ChatGPT
+历史事实准确性　　　　20 / 20　　　　20 / 20
+论证逻辑与战略分析　　21 / 25　　　　19.5 / 25
+反驳与回应质量　　　　17 / 20　　　　15.5 / 20
+史料引用质量　　　　　15.5 / 20　　　16.5 / 20
+表达与连贯性　　　　　8 / 10　　　　 8 / 10
+总分　　　　　　　　　81.5 / 100　　 79.5 / 100
+
+<strong>正方 DeepSeek：裁判评价</strong>
+优势：形成“实力对比→战略纵深转化→节制机制→执行能力”的论证闭环；在自由交锋中持续追问，并迫使反方对“积极作战与保存主力同等重要”等表述作出调整。正方在论证完整性和回应质量方面表现较好。
+不足：对武汉会战“60/40”规划存在过度解读；部分关键论据使用了层级较低或口径不一致的来源；台儿庄伤亡数据等表述需要更谨慎。
+
+<strong>反方 ChatGPT：裁判评价</strong>
+优势：强调“战略纵深不等于实际战斗力”以及“局部战役速决不等于全国战略速决”，战略层次辨析较清楚；所引用的部分学术研究和档案类来源层级较高。
+不足：没有充分说明局部胜利如何持续累积为整体战略收益；关于积极作战与保存主力的优先关系，论证过程中出现表述调整；对部分关键追问回应不足。
+
+<strong>双方史料与事实问题</strong>
+裁判指出，正方关于南京伤亡、台儿庄双口径数据等内容需要谨慎表述；反方关于淞沪会战“及时撤离”以及448家工厂统计的说法存在问题。军令部伤亡数字、台儿庄5100人、情报“部分有效”、相关文献节次等存疑内容，不应作为确定结论引用。
+
+<strong>裁判的历史学认识</strong>
+裁判认为，本题存在一定“伪二难”性质。1937—1938年的实际战略并非简单地在持久与速决之间二选一，而是大战略层面坚持持久消耗，战役层面集中兵力打有把握的仗，并根据具体情况综合运用阵地战、运动战与游击战。战略纵深只有通过组织、后方建设、财政粮食和军工能力转化，才能成为持续作战能力。
+
+<strong>最终判断</strong>
+正方在论证闭环和反驳追问方面略占优势；反方在史料层级和战略层次辨析方面有优势。双方都没有证明自己的主张是1937年唯一或最优的战略选择。2分差距只反映本场辩论的论证完成度，不应被解读为历史结论上的胜负。
+
+<em>说明：以上为根据原始《AI辩论.docx》中豆包裁判报告整理的网页展示摘要，不替代原报告全文；原报告中含图片表格的完整内容仍以 Word 文档为准。</em>
+</div></section>
 <footer><span>1937 · 战略抉择 — AI 历史模拟辩论课堂展示项目</span><span>6 个环节 · 24 段辩手发言 · 单击逐段播放</span></footer>
 </main>
 <script>
@@ -51,6 +85,7 @@ $("resetBtn").onclick=()=>{roundIndex=0;stepIndex=-1;$("nextBtn").disabled=false
 $("factBtn").onclick=()=>{const s=currentSpeech();if(!s)return;$("detailTitle").textContent="本段事实核查";$("detailText").textContent=s.fact_check_original||"本段没有单独的事实核查文本。";$("detail").classList.add("open");$("transcript").classList.remove("open");};
 $("refBtn").onclick=()=>{const s=currentSpeech();if(!s)return;const refs=s.references_original||"";$("detailTitle").textContent="本段参考资料";$("detailText").textContent=refs||((s.reference_urls_extracted||[]).join("\\n"));$("detail").classList.add("open");$("transcript").classList.remove("open");};
 $("allBtn").onclick=()=>{const txt=speeches.map(s=>`${s.turn_label||s.round_title}\\n${s.identity_original||s.model}\\n\\n${s.speech_original}\\n`).join("\\n"+"—".repeat(32)+"\\n\\n");$("transcriptText").textContent=txt;$("transcript").classList.toggle("open");$("detail").classList.remove("open");};
+$("judgeBtn").onclick=()=>{$("judgePanel").classList.toggle("open");$("detail").classList.remove("open");$("transcript").classList.remove("open");};
 render();
 </script>
 </body></html>
